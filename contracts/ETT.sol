@@ -967,8 +967,8 @@ contract ETT is KIP7Lockable, KIP7Metadata, Ownable, Operatable {
   /**
     * @dev Called by an owner to remove operator.
     */
-  function removeOperator() public onlyOwner {
-    _removeOperator(msg.sender);
+  function removeOperator(address account) public onlyOwner {
+    _removeOperator(account);
   }
 
   /**
